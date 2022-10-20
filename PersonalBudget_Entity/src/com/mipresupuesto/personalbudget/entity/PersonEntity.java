@@ -25,12 +25,12 @@ public class PersonEntity {
 	@SuppressWarnings("all")
 	public PersonEntity(UUID id, String idCard, String firstName, String middleName, String firstSurname,
 			String secondSurname) {
-		this.id = id;
-		this.idCard = idCard;
-		this.firstName = firstName;
-		this.middleName = middleName;
-		this.firstSurname = firstSurname;
-		this.secondSurname = secondSurname;
+		setId(id);
+		setIdCard(idCard);
+		setFirstName(firstName);
+		setMiddleName(middleName);
+		setFirstSurname(firstSurname);
+		setSecondSurname(secondSurname);
 	}
 
 	public static final PersonEntity create() {
@@ -47,33 +47,48 @@ public class PersonEntity {
 		this.id = id;
 	}
 	public final String getIdCard() {
+		if (idCard == null) {
+			setIdCard("");
+		}
 		return idCard;
 	}
-	public final void setIdCard(String idCard) {
+	public final void setIdCard(final String idCard) {
 		this.idCard = idCard;
 	}
 	public final String getFirstName() {
+		if (firstName == null) {
+			setFirstName("");
+		}
 		return firstName;
 	}
-	public final void setFirstName(String firstName) {
+	public final void setFirstName(final String firstName) {
 		this.firstName = firstName;
 	}
 	public final String getMiddleName() {
+		if (middleName == null) {
+			setMiddleName("");
+		}
 		return middleName;
 	}
-	public final void setMiddleName(String middleName) {
+	public final void setMiddleName(final String middleName) {
 		this.middleName = middleName;
 	}
 	public final String getFirstSurname() {
+		if (firstSurname == null) {
+			setFirstSurname("");
+		}
 		return firstSurname;
 	}
-	public final void setFirstSurname(String firstSurname) {
+	public final void setFirstSurname(final String firstSurname) {
 		this.firstSurname = firstSurname;
 	}
 	public final String getSecondSurname() {
+		if (secondSurname == null) {
+			setSecondSurname("");
+		}
 		return secondSurname;
 	}
-	public final void setSecondSurname(String secondSurname) {
+	public final void setSecondSurname(final String secondSurname) {
 		this.secondSurname = secondSurname;
 	}
 }

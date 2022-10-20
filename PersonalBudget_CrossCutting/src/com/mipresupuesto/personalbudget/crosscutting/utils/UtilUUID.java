@@ -35,7 +35,7 @@ public class UtilUUID {
 		if(uuidString != null && !"".equals(uuidString.trim())) {
 			try {
 				uuid = UUID.fromString(uuidString);
-			}catch(IllegalArgumentException Exception) {
+			}catch(IllegalArgumentException exception) {
 				//Falta gestionar la excepcion
 			}
 		}
