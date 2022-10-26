@@ -51,7 +51,7 @@ public class PersonEntity {
 		return new PersonEntity();
 	}
 	
-	public final UUID getId() {
+	public UUID getId() {
 		if(id == null) {
 			setId(UtilUUID.DEFAULT_UUID);
 		}

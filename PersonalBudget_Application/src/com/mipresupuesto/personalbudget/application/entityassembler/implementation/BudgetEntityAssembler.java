@@ -1,4 +1,4 @@
-package com.mipresupuesto.personalbudget.entityassembler.implement;
+package com.mipresupuesto.personalbudget.application.entityassembler.implementation;
 
 import org.springframework.stereotype.Component;
 
@@ -10,13 +10,13 @@ import com.mipresupuesto.personalbudget.entity.BudgetEntity;
 public class BudgetEntityAssembler implements EntityAssembler<BudgetEntity, BudgetDomain>{
 
 	@Override
-	public BudgetDomain asssembleDomain(BudgetEntity entity) {
+	public BudgetDomain assembleDomain(BudgetEntity entity) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public BudgetEntity assembleDTO(BudgetDomain domain) {
+	public BudgetEntity assembleEntity(BudgetDomain domain) {
 		// TODO Auto-generated method stub
 		return null;
 	}

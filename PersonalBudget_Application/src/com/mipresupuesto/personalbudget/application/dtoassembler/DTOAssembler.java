@@ -2,6 +2,7 @@ package com.mipresupuesto.personalbudget.application.dtoassembler;
 
 public interface DTOAssembler<T, D>{
 
-	T assembleDTO(D dto);
-	D assembleDomain(T domain);
+	D assembleDomain(T dto);
+	T assembleDTO(D domain);
+	
 }

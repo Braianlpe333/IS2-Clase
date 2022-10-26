@@ -23,6 +23,6 @@ public class CreateBudgetUseCaseImpl implements CreateBudgetUseCase{
 	
 	@Override
 	public void execute(final BudgetDomain budget) {
-		budgetRepository.save(entityAssembler.(budget));
+		budgetRepository.save(entityAssembler.assembleEntity(budget));
 	}
 }
