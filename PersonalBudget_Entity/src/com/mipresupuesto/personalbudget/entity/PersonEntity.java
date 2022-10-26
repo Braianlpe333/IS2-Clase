@@ -11,7 +11,7 @@ import com.mipresupuesto.personalbudget.crosscutting.utils.UtilUUID;
 
 @Entity
 @Table(name = "Person")
-public class PersonEntity {
+public final class PersonEntity {
 	
 	@Id
 	@Column(name = "id")
