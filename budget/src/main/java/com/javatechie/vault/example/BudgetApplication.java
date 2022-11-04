@@ -1,7 +1,6 @@
 package com.javatechie.vault.example;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -28,8 +27,8 @@ public class BudgetApplication implements CommandLineRunner{
 		Logger logger = LoggerFactory.getLogger(BudgetApplication.class);
 		
 		logger.info("------Properties---------");
-		//logger.info("Username : "+credential.getUsername());
-		//logger.info("Password : "+credential.getPassword());
+		logger.info("Username : "+credential.getUsername());
+		logger.info("Password : "+credential.getPassword());
 	}
 
 }
